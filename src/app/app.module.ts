@@ -11,24 +11,29 @@ import {ShoppingListComponent} from './shopping/shopping-list/shopping-list.comp
 import {ShoppingEditComponent} from './shopping/shopping-edit/shopping-edit.component';
 import {DropbownDirective} from './shared/dropbown.directive';
 import {ShoppingListService} from './shopping/shopping-list.service';
+import {RoutingModule} from './routing.module';
+import {RecipesStartComponent} from './recipes/recipes-start/recipes-start.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
+    RecipesStartComponent,
     RecipesComponent,
     RecipeListComponent,
     RecipeDetailComponent,
     RecipeItemComponent,
     ShoppingListComponent,
     ShoppingEditComponent,
-    DropbownDirective,
+    DropbownDirective
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RoutingModule
   ],
   providers: [ShoppingListService],
   bootstrap: [AppComponent]
 })
 export class AppModule {
+
 }
